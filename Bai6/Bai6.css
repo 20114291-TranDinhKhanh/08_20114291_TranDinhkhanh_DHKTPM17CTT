@@ -1,0 +1,20 @@
+.item1 {
+  width: 15rem;
+  background-color: lightsalmon;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+.item2 {
+  margin: 2rem;
+  display: inline-block;
+  width: 12rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.item2 > table tr td,
+.item3 > table tr td {
+  padding: 0.5rem;
+}

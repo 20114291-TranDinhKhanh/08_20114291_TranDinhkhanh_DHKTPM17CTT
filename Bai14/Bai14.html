@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Contact Us</h1>
+    <p>Use the following form to send a message to Example Cafe</p>
+
+    <form class="form">
+        <div>
+            <label for="email">Your email: </label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="message">Message: </label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label for="option">How did you hear of us? : </label>
+            <select name="option" id="option">
+                <option value="Google">Google</option>
+            </select>
+        </div>
+
+        <div>
+            <span>Newsletter</span>
+            <input type="checkbox">
+            <label for="checkbox">Ensure this box is checked if you would like to receive email updates: </label>
+        </div>
+
+        <input type="submit" value="send message">
+    </form>
+</body>
+
+</html>
