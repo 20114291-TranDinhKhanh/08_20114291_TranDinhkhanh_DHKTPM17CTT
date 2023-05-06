@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row align-items-center">
+            <h3>Validating a complete form</h3>
+            <div class="border border-warning"></div>
+        </div>
+
+        <form action="/">
+            <div class="row align-items-center p-3 border-bottom border-warning ">
+                <label for="first-name" class="col">Fistname</label>
+                <div class="col">
+                    <input type="text" class="form-control" name="first-name" id="first-name">
+                </div>
+                <div class="col">
+                    <i class="error"></i>
+                </div>
+            </div>
+
+            <div class="row align-items-center p-3 border-bottom border-warning">
+                <label for="last-name" class="col">Lastname</label>
+                <div class="col">
+                    <input type="text" class="form-control" name="last-name" id="last-name">
+                </div>
+                <div class="col">
+                    <i class="error"></i>
+                </div>
+            </div>
+
+            <div class="row align-items-center p-3 border-bottom border-warning">
+                <label for="user-name" class="col">Username</label>
+                <div class="col">
+                    <input type="text" class="form-control" name="user-name" id="user-name">
+                </div>
+                <div class="col">
+                    <i class="error"></i>
+                </div>
+            </div>
+
+            <div class="row align-items-center p-3 border-bottom border-warning">
+                <label for="password" class="col">Password</label>
+                <div class="col">
+                    <input type="text" class="form-control" name="password" id="password">
+                </div>
+                <div class="col">
+                    <i class="error"></i>
+                </div>
+            </div>
+
+            <div class="row align-items-center p-3 border-bottom border-warning">
+                <label for="confirm-password" class="col">Confirm password</label>
+                <div class="col">
+                    <input type="password" class="form-control" name="confirm-password" id="confirm-password">
+                </div>
+                <div class="col">
+                    <i class="error"></i>
+                </div>
+            </div>
+
+            <div class="row align-items-center p-3 border-bottom border-warning">
+                <label for="email" class="col">Email</label>
+                <div class="col">
+                    <input type="email" class="form-control" name="email" id="email">
+                </div>
+                <div class="col">
+                    <i class="error"></i>
+                </div>
+            </div>
+
+            <div class="row align-items-center p-3 border-bottom border-warning">
+                <label for="policy" class="col">Please agree to our policy</label>
+                <div class="col">
+                    <input type="checkbox" name="policy" id="policy">
+                    <i class="error">Please accept our policy</i>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+
+            <div class="row align-items-center p-3 border-bottom border-warning">
+                <label for="policy" class="col">I'd like to receive the newletter</label>
+                <div class="col">
+                    <input type="checkbox" name="new-letter" id="new-letter">
+                </div>
+                <div class="col">
+                </div>
+            </div>
+
+            <!-- topic -->
+            <div class=" align-items-center p-3 border-bottom border-warning">
+                <p for="policy" class="col">Topics (select at least two) - note: would be hidden when newsletter isn't selected, but is visible here for the demo</p>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <input type="checkbox" name="Marketflash" value="Marketflash" id="Marketflash">
+                        <label for="Marketflash">Marketflash</label>
+                        <br>
+
+                        <input type="checkbox" name="Latest-fuzz" value="Latest-fuzz" id="Latest-fuzz">
+                        <label for="Latest-fuzz">Latest-fuzz</label>
+                        <br>
+
+                        <input type="checkbox" name="Mailing-list-digester" value="Mailing-list-digester" id="Mailing-list-digester">
+                        <label for="Mailing-list-digester">Mailing list digester</label>
+                        <br>
+
+                        <i class="error">Please select at least 2 topics</i>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+
+            <div class="row p-3">
+                <div class="col"></div>
+                <div class="col">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+                <div class="col"></div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script src="./main.js"></script>
+
+</html>

@@ -1,0 +1,21 @@
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header {
+    background-color: #c7b7b7;
+}
+
+.header-left {
+    width: 8rem;
+    height: 8rem;
+}
+
+.header-right {
+    height: 8rem;
+}
+
+.invalid {
+    border: 1px solid red;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#myModal').on('shown.bs.modal', function() {
+                $('#myInput').trigger('focus')
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row col- col-md-12">
+            <div class="col-12 bg-body">
+                <img src="../img/zoom65.jpg" alt="" width="100%" height="100%">
+            </div>
+        </div>
+        <div class="row col- col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a href="#" class="navbar-brand"></a>
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item active btn-info ">
+                            <a class="nav-link" href="#"><img src="../img/home.png" alt="" width="5%" height="5%"> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img src="../img/menu.png" alt="" width="5%" height="5%"></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="searchbox">Search</a>
+                            </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <table class="table-bordered table-light table-primary table table-striped" id="tbDSV">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>MA</th>
+                        <th>HO TEN</th>
+                        <th>DIA CHI</th>
+                        <th>TIEN DICH VU</th>
+                        <th>TIEN DO DUNG</th>
+                        <th>TIEN GIAM</th>
+                        <th>THANH TIEN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>01</td>
+                        <td>Khanh</td>
+                        <td>Tp.HCM</td>
+                        <td>30000</td>
+                        <td>10000</td>
+                        <td>30000</td>
+                        <td>70000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>02</td>
+                        <td>Vi</td>
+                        <td>Tp.HCM</td>
+                        <td>30000</td>
+                        <td>10000</td>
+                        <td>10000</td>
+                        <td>80000</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>03</td>
+                        <td>Dat</td>
+                        <td>Thu Duc</td>
+                        <td>10000</td>
+                        <td>90000</td>
+                        <td>10000</td>
+                        <td>20000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Nhap thong tin</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" class="form-control">
+                                <div class="row">
+                                    <div class="col-6 col-sm-3">
+                                        <label for="">Ma khach hang</label>
+                                    </div>
+                                    <div class="col-6 col-sm-9">
+                                        <input type="text" class="form-control" placeholder="Nhap ma khach hang" id="txtMa">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-6 col-sm-3">
+                                        <label for="">Ho Ten</label>
+                                    </div>
+                                    <div class="col-6 col-sm-9">
+                                        <input type="text" class="form-control" placeholder="Nhap ho ten" id="txtTen">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 col-sm-12">
+                                        <span id="tbTen">*</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 col-sm-3">
+                                        <label for="">Dia chi</label>
+                                    </div>
+                                    <div class="col-6 col-sm-9">
+                                        <input type="text" class="form-control" placeholder="Nhap dia chi" id="txtDC">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 col-sm-12">
+                                            <span id="tbDC">*</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4 col-xl-4">
+                                        <label for=""></label>
+                                    </div>
+                                    <div class="col-8 col-xl-8">
+                                        <input type="checkbox" name="chkDoDung" class="chkDoDung" value="70000" id="chkDoDung" /> Kinh boi
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="rwo">
+                                    <div class="col-4 col-xl-4">
+                                        <label for="">Thanh tien</label>
+                                    </div>
+                                    <div class="col-8 col-xl-8">
+                                        <input type="text" name="txtKQ" id="txtKQ" class="form-control" value="0" disabled>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-4 col-xl-4">
+                                        <label for="Giam tru"></label>
+                                    </div>
+                                    <div class="col-8 col-xl-8">
+                                        <input type="radio" name="giam" value="70000" id="giam"> Ngay thuong
+                                        <input type="radio" name="giam" value="10000" id="giam"> Cuoi tuan
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col">
+                                    <div class="col-4 col-xl-4">
+                                        <label for="">Tong Tien</label>
+                                    </div>
+                                    <div class="col-8 col-xl-8">
+                                        <input type="text" name="txtTong" class="form-control" id="txtTong" disabled>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-5 col-xl-5"></div>
+                                <div class="col-5 col-xl-5">
+                                    <input type="button" value="Submit" id="btnSave" class="btn-success btn-block">&nbsp;
+                                    <input type="reset" value="reset">
+                                </div>
+                                <div class="col-2 col-xl-2"></div>
+                                <br>
+                            </form>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

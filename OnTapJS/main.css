@@ -1,0 +1,11 @@
+.container {
+    background-image: linear-gradient(to bottom, #fff, yellow 350%);
+}
+
+.error {
+    color: red;
+}
+
+.invalid {
+    border-color: red;
+}

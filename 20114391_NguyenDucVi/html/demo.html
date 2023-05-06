@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        div.container {
+            width: 800px;
+        }
+        /* Border top legend */
+        
+        fieldset {
+            border-top: 1px solid #000000;
+            background-image: linear-gradient(to bottom, #fdfdfd, #8ad196);
+            margin: 1px;
+            padding: 8px;
+        }
+        
+        .error {
+            color: red;
+        }
+        /* br net dut*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="get" class="cms">
+            <fieldset>
+                <legend>Validating a complete form</legend>
+                <div class="row">
+                    <div class="col-lg-2">Firstname</div>
+                    <div class="col-lg-5"><input type="text" id="firstname"></div>
+                    <div class="error"></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-2">Lastname</div>
+                    <div class="col-lg-5"><input type="text" id="lastname"></div>
+                    <div class="error"></div>
+
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-2">Username</div>
+                    <div class="col-lg-5"><input id="username" type="text"></div>
+                    <div class="error"></div>
+
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-2">Password</div>
+                    <div class="col-lg-5"><input id="password" type="text"></div>
+                    <div class="error"></div>
+
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-2">Confirm Password</div>
+                    <div class="col-lg-5"><input id="confirmPassword" type="text"></div>
+                    <div class="error"></div>
+
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-2">Email</div>
+                    <div class="col-lg-5"><input id="email" type="text"></div>
+                    <div class="error"></div>
+
+                </div>
+                <hr>
+                <div class="row">
+                    <div class=" col-lg-2">Please agree to our policy</div>
+                    <div class="col-lg-5"><input type="checkbox" name="" id=""></div>
+                    <div class="error"></div>
+
+                </div>
+                <hr>
+                <div class="row">
+                    <div class=" col-lg-2">i'd like to receive the newsletter</div>
+                    <div class="col-lg-5"><input type="checkbox" name="" id=""></div>
+                    <div class="error"></div>
+
+                </div>
+                <hr>
+                <p>
+                    Topics (select at least one) - note - could be hidden when newsletter isn't selected, but is visible here for the demo
+                </p>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-3"><input type="checkbox" name="" id="">Marketflash</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-3"><input type="checkbox" name="" id="">Latest fuzz</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-3"><input type="checkbox" name="" id="">Mailing list digester</div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-3"><input type="submit"></div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+</body>
+
+<!-- <script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery-3.6.4.min.js"></script> -->
+<script src="../main.js"></script>
+
+</html>
